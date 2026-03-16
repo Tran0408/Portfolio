@@ -206,7 +206,7 @@ export const experiences = [
   {
     id: 1,
     img: "https://upload.wikimedia.org/wikipedia/commons/8/86/Bain_and_Company_Logo_1.svg",
-    role: "Software Engineering Intern",
+    role: "Software Engineering",
     company: "Bain & Company",
     date: "Feb 2022 - Aug 2022",
     desc: "Developed C#/.NET microservices backed by SQL Server with clear API contracts and robust error handling. Contributed Angular/JavaScript components for data-intensive workflows and integrated the UI with backend endpoints. Wrote unit and integration tests, pair-programmed on bugs, and followed team standards for branching, reviews and CI.",
