@@ -9,9 +9,9 @@ const About = () => {
       id="about"
       className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
     >
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-12">
         {/* Left Side */}
-        <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+        <div className="md:w-3/5 text-center md:text-left mt-8 md:mt-0 md:pr-6">
           {/* Greeting */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
             Hi, I am
@@ -25,10 +25,10 @@ const About = () => {
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'Fullstack Developer',
-                'Data Analyst',
-                'ML/AI Engineer',
-                'Data Scientist',
+                'Full Stack Engineer',
+                'Next.js Developer',
+                'AI Engineer',
+                'Software Engineer',
               ]}
               speed={100}
               eraseSpeed={50}
@@ -41,13 +41,12 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I’m a software engineer who lives somewhere between full-stack dev, data nerd and AI tinkerer. I build things end-to-end—APIs, data pipelines, dashboards and ML/AI features—mostly with Python, SQL and React/Next.js. If there’s a messy pile of data or an idea for a smart product, I’m usually the person turning it into something that actually works (and looks decent on a screen).
+            Full-stack software engineer with 2+ years of professional experience building production-grade web apps, backend APIs, and AI-powered tools at ZS Associates and Bain & Company. I ship end-to-end with Next.js, React, Node.js, Python and PostgreSQL, and have independently built and deployed four live full-stack products — including AI-native platforms using Next.js, Prisma, and LLM integrations. Master of Computer Science from the University of Sydney. Based in Sydney with Australian work rights.
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1f4t1dV6-H4W17n_3QR6tY18dKwyWuECC/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/Tanishq_Rana_Master_Resume.pdf"
+            download="Tanishq_Rana_Master_Resume.pdf"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
               background: 'linear-gradient(90deg, #8245ec, #a855f7)',
@@ -59,9 +58,9 @@ const About = () => {
 
         </div>
         {/* Right Side */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
+        <div className="md:w-2/5 flex justify-center md:justify-end flex-shrink-0">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[22rem] md:h-[22rem] lg:w-[26rem] lg:h-[26rem] border-4 border-purple-700 rounded-full"
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}
