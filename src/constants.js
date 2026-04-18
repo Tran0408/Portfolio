@@ -64,6 +64,10 @@ export const SkillsInfo = [
         logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg',
       },
       {
+        name: 'NestJS',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg',
+      },
+      {
         name: 'REST APIs',
         logo: 'https://cdn-icons-png.flaticon.com/512/2165/2165004.png',
       },
@@ -83,6 +87,10 @@ export const SkillsInfo = [
       {
         name: 'SQL Server',
         logo: 'https://img.icons8.com/?size=100&id=J6KcaRLsTgpZ&format=png&color=000000',
+      },
+      {
+        name: 'Redis',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg',
       },
       {
         name: 'Neo4j',
@@ -175,6 +183,10 @@ export const SkillsInfo = [
         logo: 'https://railway.app/brand/logo-light.png',
       },
       {
+        name: 'GCP',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg',
+      },
+      {
         name: 'Linux',
         logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg',
       },
@@ -189,7 +201,7 @@ export const experiences = [
     role: 'Data & Software Engineer',
     company: 'ZS Associates',
     date: 'Sep 2022 - Jan 2024',
-    desc: 'Built and maintained scalable full-stack web applications with React frontends and Node.js/Python backend APIs, deployed on AWS across distributed enterprise infrastructure serving global clients. Designed PostgreSQL and SQL Server schemas, implemented data pipelines, and ensured performance across large-scale production datasets. Contributed to AI-powered workflow automation by integrating LLM APIs into production applications. Operated with high ownership in a fast-paced, cross-functional environment shipping reliable, production-grade software end-to-end.',
+    desc: 'Engineered scalable data processing services in Python and Golang, containerised with Docker and deployed on AWS and Azure across 5–10 global enterprise client environments. Built and maintained client-facing Power BI and Tableau dashboards; performed large-scale SQL analysis using Databricks and Advanced Excel to deliver actionable insights to senior stakeholders. Designed distributed microservices architecture with defined service boundaries, data flows, and API contracts. Integrated LLM APIs and Prompt Engineering to automate reporting workflows and accelerate team velocity.',
     skills: [
       'React',
       'Node.js',
@@ -252,7 +264,7 @@ export const projects = [
     title: 'AI PR Reviewer',
     description:
       'Production-grade AI-powered GitHub PR reviewer built with Next.js 14, FastAPI, ARQ, Prisma and PostgreSQL. Listens to GitHub webhooks, fetches diffs, runs them through an LLM with a structured prompt, and posts inline comments, security/performance findings, and actionable improvement suggestions directly on the PR. Features merge conflict detection, self-PR fallback handling, and a dashboard with refresh sync. Deployed on Vercel + Railway + Neon + Upstash.',
-    image: 'https://placehold.co/600x400/8245ec/ffffff?text=AI+PR+Reviewer',
+    image: '/projects/ai-pr-reviewer.png',
     tags: ['Next.js', 'FastAPI', 'Prisma', 'PostgreSQL', 'Redis', 'LLM', 'GitHub API', 'Docker'],
     github: 'https://github.com/Tran0408/AI-PR-Reviewer',
     webapp: 'https://aiprreview.tanishqrana.online',
@@ -262,7 +274,7 @@ export const projects = [
     title: 'SensAI — AI Career Coach',
     description:
       "Full-stack AI platform: Next.js frontend, PostgreSQL with Prisma ORM, Gemini LLM integration, and secure Clerk auth. Independently designed, built, and deployed to production — an end-to-end Next.js AI SaaS demonstrating full ownership across the stack.",
-    image: 'https://placehold.co/600x400/8245ec/ffffff?text=SensAI',
+    image: '/projects/sensai.png',
     tags: ['Next.js', 'React', 'TypeScript', 'Prisma', 'PostgreSQL', 'Gemini AI', 'Clerk', 'Vercel'],
     github: 'https://github.com/Tran0408/SensAI',
     webapp: 'https://sens-ai-two-taupe.vercel.app',
@@ -271,8 +283,8 @@ export const projects = [
     id: 2,
     title: 'TeachSmart',
     description:
-      'Collaboratively built EdTech platform that uses AI to help teachers and learners with personalized content and results-driven study flows. Full-stack deployment on Railway with a production data layer and responsive frontend.',
-    image: 'https://placehold.co/600x400/8245ec/ffffff?text=TeachSmart',
+      'AI-powered resource finder for Australian teachers (Years 7–12), aligned to the Australian Curriculum v9. Generates lesson plans, 12-slide decks, and semester overviews from a topic input. Features multilingual UI across 8 languages. Full-stack deployment on Railway with a production data layer and responsive frontend.',
+    image: '/projects/teachsmart.png',
     tags: ['Full-Stack', 'AI', 'Railway', 'EdTech'],
     github: 'https://github.com/sum-kaur/teachsmart',
     webapp: 'https://teachsmart-production.up.railway.app/#results',
@@ -282,7 +294,7 @@ export const projects = [
     title: 'Splitr — Smart Expense Splitter',
     description:
       'Full-stack Next.js consumer product with real-time data via Convex, clean component architecture, and production deployment on Vercel. Demonstrates product instincts, UI quality, and rapid shipping capability.',
-    image: 'https://placehold.co/600x400/8245ec/ffffff?text=Splitr',
+    image: '/projects/splitr.png',
     tags: ['Next.js', 'React', 'TypeScript', 'Convex', 'Vercel'],
     github: 'https://github.com/Tran0408/splitr',
     webapp: 'https://splitr-ten.vercel.app',
@@ -291,7 +303,7 @@ export const projects = [
     id: 4,
     title: 'Neo4j Agentic AI System',
     description:
-      'Production-grade agentic AI backend built with Python, FastAPI, LangGraph and Neo4j, exposed via MCP. Natural-language-to-Cypher querying developed under the University of Sydney with Exponent Venture Group (source private under NDA).',
+      'Production-grade agentic AI system built with Python, FastAPI, LangGraph, and Neo4j with MCP integration. Converts natural language into validated Cypher queries with schema-aware validation and visual insights. Built under the University of Sydney with Exponent Venture Group.',
     image: 'https://placehold.co/600x400/8245ec/ffffff?text=Neo4j+Agentic+AI',
     tags: ['Python', 'FastAPI', 'LangGraph', 'Neo4j', 'MCP', 'LLM'],
     github: '',
