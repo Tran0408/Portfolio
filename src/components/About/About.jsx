@@ -26,7 +26,6 @@ const About = () => {
             <ReactTypingEffect
               text={[
                 'Fullstack Developer',
-                'Data Analyst',
                 'ML/AI Engineer',
                 'Data Scientist',
               ]}
