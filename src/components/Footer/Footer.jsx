@@ -4,7 +4,9 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react
 const Footer = () => {
   // Smooth scroll function
   const handleScroll = (sectionId) => {
-    const section = document.getElementById(sectionId);
+    const section =
+      document.getElementById(sectionId) ||
+      (sectionId === "projects" ? document.getElementById("work") : null);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -22,7 +24,7 @@ const Footer = () => {
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
             { name: "Experience", id: "experience" },
-            { name: "Projects", id: "work" },
+            { name: "Projects", id: "projects" },
             { name: "Education", id: "education" },
           ].map((item, index) => (
             <button

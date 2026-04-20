@@ -17,6 +17,7 @@ const Work = () => {
       id="work"
       className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative"
     >
+      <span id="projects" className="absolute -top-20" aria-hidden="true" />
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">PROJECTS</h2>
