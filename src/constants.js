@@ -271,6 +271,16 @@ export const projects = [
   },
   {
     id: 1,
+    title: 'VisaGuard',
+    description:
+      'Full-stack compliance tracker for Australian subclass 500 students, built to monitor casual work hours against the 48-hour fortnightly limit. Includes Clerk authentication, onboarding for semester and break periods, Postmark inbound email parsing, OpenRouter-powered roster extraction, ICS calendar feed sync, manual shift editing, employer aliases, unpaid break rules, and a live dashboard with fixed-fortnight and rolling 14-day views. Deployed with a FastAPI backend, PostgreSQL, Alembic migrations, and a Next.js frontend.',
+    image: '/projects/visaguard.png',
+    tags: ['Next.js', 'FastAPI', 'PostgreSQL', 'Clerk', 'OpenRouter', 'Postmark', 'Railway'],
+    github: 'https://github.com/Tran0408/Visaguard',
+    webapp: 'https://visaguardapp.tanishqrana.online',
+  },
+  {
+    id: 2,
     title: 'SensAI — AI Career Coach',
     description:
       "Full-stack AI platform: Next.js frontend, PostgreSQL with Prisma ORM, Gemini LLM integration, and secure Clerk auth. Independently designed, built, and deployed to production — an end-to-end Next.js AI SaaS demonstrating full ownership across the stack.",
@@ -280,7 +290,7 @@ export const projects = [
     webapp: 'https://sens-ai-two-taupe.vercel.app',
   },
   {
-    id: 2,
+    id: 3,
     title: 'TeachSmart',
     description:
       'AI-powered resource finder for Australian teachers (Years 7–12), aligned to the Australian Curriculum v9. Generates lesson plans, 12-slide decks, and semester overviews from a topic input. Features multilingual UI across 8 languages. Full-stack deployment on Railway with a production data layer and responsive frontend.',
@@ -290,7 +300,7 @@ export const projects = [
     webapp: 'https://teachsmart-production.up.railway.app/#results',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Splitr — Smart Expense Splitter',
     description:
       'Full-stack Next.js consumer product with real-time data via Convex, clean component architecture, and production deployment on Vercel. Demonstrates product instincts, UI quality, and rapid shipping capability.',
@@ -300,7 +310,7 @@ export const projects = [
     webapp: 'https://splitr-ten.vercel.app',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Neo4j Agentic AI System',
     description:
       'Production-grade agentic AI system built with Python, FastAPI, LangGraph, and Neo4j with MCP integration. Converts natural language into validated Cypher queries with schema-aware validation and visual insights. Built under the University of Sydney with Exponent Venture Group.',
